@@ -1,7 +1,7 @@
 'use strict';
 
 
-const fp = module.exports = {}
+const fp = module.exports = {};
 
 
 fp.map = (list, args) => {
