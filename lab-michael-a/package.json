@@ -1,0 +1,25 @@
+{
+  "name": "lab-michael-a",
+  "version": "1.0.0",
+  "description": "Lab 02 for June 13",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expect": "^1.20.2",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2"
+  },
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2"
+  }
+}
