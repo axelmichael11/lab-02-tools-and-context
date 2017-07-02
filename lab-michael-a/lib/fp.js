@@ -23,17 +23,27 @@ fp.filter = (list, args) => {
 
 fp.reduce = (list, args, start) => {
   if (typeof list === 'object') {
-    return Array.prototype.reduce.apply(list, args, start);
+    console.log(typeof list, args, start);
+    return Array.prototype.reduce.call(list, args, start);
+  } else {
+    return null;
+  }
+
+};
+
+
+
+fp.concat = (list, ...args) => {
+  if (typeof list === 'object') {
+    return Array.prototype.concat.apply(list, args);
   } else {
     return null;
   }
 };
 
-
-
-fp.concat = (list, args) => {
+fp.splice = (list, args) => {
   if (typeof list === 'object') {
-    return Array.prototype.concat.apply(list, args);
+    return Array.prototype.splice.call(list, args);
   } else {
     return null;
   }
